@@ -18,8 +18,9 @@ namespace Compilify.DataAccess.Redis
         
         public RedisConnectionGateway(string connectionString)
         {
-            this.connectionString = connectionString;
-            connection = CreateConnection();
+            //this.connectionString = connectionString;
+           this.connectionString = "redis://redistogo-appharbor:5204f0873349e317cf629a6289006b0f@clingfish.redistogo.com:9275/";
+           connection = CreateConnection();
         }
         
         public RedisConnection GetConnection()
